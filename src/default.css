@@ -1,4 +1,4 @@
-root{
+:root{
     --mainColor:#eaeaea;
     --secondaryColor:#fff;
 
@@ -6,6 +6,8 @@ root{
     
     --mainText:black;
     --secondaryText:#4b5156;
+
+    --themeDotBorder: #24292e;
 }
 
 
@@ -16,13 +18,13 @@ html, body{
 
 
 h1, h2, h3, h4, h5, h6, strong{
-    color: black;
+    color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
 }
 
 p, li, span, label, input, textarea{
-    color: #4b5156;
+    color: var(--secondaryText);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -44,14 +46,14 @@ h6 { font-size: 16px;}
 
 
 .s1{
-    background-color: #eaeaea;
-    border-bottom:1px solid #c1c1c1;
+    background-color: var(--mainColor);
+    border-bottom:1px solid var(--borderColor);
     overflow:auto;
 }
 
 .s2{
-    background-color: #fff;
-    border-bottom:1px solid #c1c1c1;
+    background-color: var(--secondaryColor);
+    border-bottom:1px solid var(--borderColor);
     overflow:auto;
 }
 
@@ -69,8 +71,8 @@ h6 { font-size: 16px;}
 }
 
 .intro-wrapper{
-    background-color: #fff;
-    border: 1px solid #c1c1c1;
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -79,7 +81,6 @@ h6 { font-size: 16px;}
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -89,11 +90,11 @@ h6 { font-size: 16px;}
 .nav-wrapper{
     border-radius: 5px 5px 0 0;
     grid-area: nav-wrapper;
-    border-bottom: 1px solid #c1c1c1;
+    border-bottom: 1px solidvar(--borderColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eaeaea;
+    background-color: var(--mainColor);
 }
 
 #navigation{
@@ -139,6 +140,65 @@ h6 { font-size: 16px;}
 
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+
+#theme-option-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+
+    margin: 5px;
+    border: 2px solid var(--themeDotBorder);
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    
+    cursor: pointer;
+}
+
+.theme-dot:hover{
+    border-width: 5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode{
+    background-color: #192734;
+}
+
+#green-mode{
+    background-color: #78866b;
+}
+
+#purple-mode{
+    background-color: #7E4C74;
+}
+
+#setting-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column{
