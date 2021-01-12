@@ -1,8 +1,8 @@
 :root{
-    --mainColor:#15202B;
-    --secondaryColor:#192734;
+    --mainColor:black;
+    --secondaryColor:black;
 
-    --borderColor:#164D56;
+    --borderColor:white;
     
     --mainText:#fff;
     --secondaryText:#eeeeee;
@@ -12,5 +12,5 @@
     --previewBg: rgb(25, 39, 52, 0.8);
     --previewShadow: #111921;
 
-    --buttonCollor: #17a2b8;
+    --buttonColor: #17a2b8;
 }
