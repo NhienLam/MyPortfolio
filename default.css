@@ -370,6 +370,24 @@ h6 { font-size: 16px;}
     border: none;
 }
 
+.icons {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+.icons:hover {
+    color: #292929;
+    border: 3px solid #292929;
+    visibility: visible;
+    transition: .5s;
+}
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
