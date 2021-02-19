@@ -14,3 +14,20 @@
 
     --buttonColor: #17a2b8;
 }
+
+.icons {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid black;
+    transition: .5s;
+}
+
+.icons:hover {
+	border: 3px solid #fff;
+    visibility: visible;
+    transition: .5s;
+}
