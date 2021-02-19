@@ -14,3 +14,25 @@
 
     --buttonColor: #e98074;
 }
+
+/* a{
+    text-decoration: none;
+    color:#f74c09;
+} */
+
+.icons {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 20px;
+    color: #e98074;
+    border: 1px solid #eae7dc;
+    transition: .5s;
+}
+
+.icons:hover {
+	border: 3px solid #d8c3a5;
+    visibility: visible;
+    transition: .5s;
+}
