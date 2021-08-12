@@ -41,6 +41,10 @@ a{
     color:#17a2b8;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 ul{
     list-style: none;
 }
@@ -380,6 +384,21 @@ h6 { font-size: 16px;}
     border: 1px solid #fff;
     transition: .5s;
 }
+
+.logo {
+    margin: 10px 30px;
+    display: block;
+    font-size: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.logo-title {
+    margin-top: 3px;
+    color: var(--secondaryText);
+    text-align: center;
+    font-size: 30px;
+  }
 
 .icons:hover {
     border: 3px solid #292929;
