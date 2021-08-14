@@ -30,14 +30,14 @@
             <div class="intro-wrapper">
                 <div class= "nav-wrapper">
                     <div class="dots-wrapper">
-                        <div id="dot-1" class="browser-dot"></div>
-                        <div id="dot-2" class="browser-dot"></div>
-                        <div id="dot-3" class="browser-dot"></div>
+                        <a style="font-size: 30px; color: var(--mainText); font-weight: bold; font-family: sans-serif; text-decoration: none;" 
+                        href="index.html"> RICKY<span style="color: red;">.</span> </a>
                     </div>
                     
                     <ul id="navigation">
+                        <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#skill">Skills</a></li>
-                        <li><a href="index.html#work-experience">Experience</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
                         <li><a href="index.html#projects">Projects</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
 
@@ -80,9 +80,10 @@
    
     <section class="s2">
         <div class="main-container">
+            <a name="about"></a>
             <div class="about-wrapper">
                 <div class="about-me">
-                    <h4>More about me</h4>
+                    <h4>About me!</h4>
 
                     <p>I am currently pursuing a BS in Computer Science at
                          San Jose State University. I am excited to learn new skills 
@@ -184,11 +185,51 @@
     </section>
 
     <section class="s2">
-        <a name="work-experience"></a>
+        <a name="experience"></a>
         <div class="main-container">
             <h2 style="text-align: center;">Work Experience</h2>
 
-        </div>
+            <div class="experience-wrapper">
+                <div class= "left-column" style="padding: 0;">
+                    <div style="margin-top: 50%; margin-bottom: 50%;">
+                        <img id="experience-pic" src="resources/images/stem-away.png">
+                        <h5 style="text-align: center; line-height: 0;">STEM-Away</h5>
+                    </div>
+                </div>
+
+                <div class= "right-column" style="padding: 0; display: inline-block;">
+                    <p id="experience-title">Full-stack Developer Intern<span style="padding-left: 300px;"><i>June-August 2021</i>
+                    </span></p>
+                    <p>
+                        <ul style="list-style-type: disc;">
+                            <li>Worked in a team of 6 interns to design and build a Reply Voting Plugin for the open-source forum platform, Discourse</li>
+                            <li>Frontend:
+                                <ul style="list-style-type: circle;">
+                                    <li>Created vote buttons to allow users to vote</li>
+                                    <li>Displayed vote count to users</li>
+                                    <li>Connected frontend to database to get and modify vote</li>
+                                </ul>
+                            </li>
+                            <li>Backend: created a customs setting to enable and disable the plugin</li>
+                            <li>Presented and gave a demo to Discourse experts and STEM-Away mentors</li>
+                            <li>Technologies: JavaScript, Ember.js, Ajax, Handlebar.js, HTML, SCSS, Ruby, Rails, Git, GitHub</li>
+                        </ul>
+                    </p>
+                    <ul style="margin: 0; padding: 0;">
+                        <li style="display: inline-block;"><div class="logo" style="font-size: 50px;"><i class="devicon-javascript-plain colored"></i>
+                        </div></li>
+                        <li style="display: inline-block;"><div class="logo" style="font-size: 50px;"><i class="devicon-ruby-plain colored"></i>
+                        </div></li>
+                        <li style="display: inline-block;"><div class="logo" style="font-size: 50px;"><i class="devicon-sass-plain colored"></i>
+                        </div></li>
+                        <li style="display: inline-block;"><div class="logo" style="font-size: 50px;"><i class="devicon-handlebars-plain"></i>
+                        </div></li>
+                        <li style="display: inline-block;"><div class="logo" style="font-size: 20px;"><img src="resources/images/agile.png" style="width: 60px;">Agile
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+
     </section>
 
     <section class="s1">
@@ -205,7 +246,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Google Search Engine Simulator</h6>
                             <p class="post-intro">A micro version of Google Search Engine Simulator</p>
-                            <a target="_blank" href="post1.html">Read More</a>
+                            <a target="_blank" href="google-search-engine-simulator.html">Read More</a>
                             <br>
                             <a target="_blank" href="https://github.com/NhienLam/GoogleSearchEngineSimulator.git">Source Code</a>
                         </div>
@@ -218,9 +259,8 @@
                         <div class="post-preview">
                             <h6 class="post-title">Learning Disability Predictor</h6>
                             <p class="post-intro">A web application designed for teachers
-                                to run quick tests on students to predict whether they
-                                have learning disabilities</p>
-                                <a target="_blank" href="post2.html">Read More</a>
+                                to run quick tests ...</p>
+                                <a target="_blank" href="learning-disability-predictor.html">Read More</a>
                                 <br>
                                 <a target="_blank" href="https://github.com/law-nguyen/LDP.git">Source Code</a>
                         </div>
@@ -232,9 +272,8 @@
                         <img class="thumbnail" src="resources/images/TodoList.png">
                         <div class="post-preview">
                             <h6 class="post-title">To-Do List</h6>
-                            <p class="post-intro">A To-do List that maintains a priority queue to manage
-                                the tasks to be done</p>
-                                <a target="_blank" href="post3.html">Read More</a>
+                            <p class="post-intro">A To-do List that maintains a priority queue to manage ...</p>
+                                <a target="_blank" href="todo-list.html">Read More</a>
                                 <br>
                                 <a target="_blank" href="https://github.com/NhienLam/TodoList.git">Source Code</a>
                         </div>
@@ -247,23 +286,23 @@
     <section class="s2">
         <div class="main-container">
             <h2 style="text-align: center;">Contact</h2>
-
+            <p style="text-align: center;">EMAIL: nhienlam.ricky@gmail.com</p>
             <form id="contact-form">
                 <a name="contact"></a>
                 <label>Your Name</label>
-                <input class="input-field" type="text" name="name">
+                <input class="input-field" type="text" name="name" placeholder="Enter your name *">
 
                 <label>Your Email</label>
-                <input class="input-field" type="text" name="subject">
+                <input class="input-field" type="text" name="subject" placeholder="Enter your email *">
 
                 <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
+                <textarea class="input-field" name="message" placeholder="Enter your message *"></textarea>
 
                 <input id="submit-btn" type="submit" value="Submit">
             </form>
             
             <div class='main-container' style="text-align: center;">
-                <ul>   
+                <ul style="text-align: center;">   
                     <li style = "display: inline-block;"></li><a class="icons" target="_blank" href="mailto:nhienlam.ricky@gmail.com"><i class="fa fa-envelope"></i></a></li>
                     <li style = "display: inline-block;"><a class="icons" target="_blank" href="https://www.linkedin.com/in/nhien-lam/"><i class="fa fa-linkedin-square"></i></a></li>
                     <li style = "display: inline-block;"><a class="icons" target="_blank" href="http://github.com/NhienLam"><i class="fa fa-github"></i></a></li>
