@@ -1,0 +1,33 @@
+:root{
+	--mainColor:#ACF3D3;
+	--secondaryColor:#F6FFFB;
+
+	--borderColor:#3FB488;
+
+	--mainText:black;
+	--secondaryText:#4b5156;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:#F6FFFB;
+	--previewShadow:#ACF3D3;
+
+	--buttonColor:#2CC1B5;
+}
+
+.icons {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 20px;
+    color: #2CC1B5;
+    border: 1px solid #F6FFFB;
+    transition: .5s;
+}
+
+.icons:hover {
+	border: 3px solid #ACF3D3;
+    visibility: visible;
+    transition: .5s;
+}

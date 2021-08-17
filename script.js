@@ -39,9 +39,9 @@ function setTheme(mode)
         document.getElementById('theme-style').href = 'styles/orange.css'
     }
 
-    if(mode == 'blue')
+    if(mode == 'mint')
     {
-        document.getElementById('theme-style').href = 'styles/blue.css'
+        document.getElementById('theme-style').href = 'styles/mint.css'
     }
 
     localStorage.setItem('theme', mode)
