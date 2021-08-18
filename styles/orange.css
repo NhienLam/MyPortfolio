@@ -4,15 +4,15 @@
 
     --borderColor:#161914;
     
-    --mainText:#e85a4f;
+    --mainText: #23395d;
     --secondaryText:black;
 
     --themeDotBorder: #fff;
 
     --previewBg: #eae7dc;
-    --previewShadow: #e98074;
+    --previewShadow: #d8c3a5;
 
-    --buttonColor: #e98074;
+    --buttonColor: #23395d;
 }
 
 /* a{
@@ -26,7 +26,7 @@
     display: inline-block;
     font-size: 70px;
     padding: 20px 20px;
-    color: #e98074;
+    color: #23395d;
     border: 1px solid #eae7dc;
     transition: .5s;
 }
